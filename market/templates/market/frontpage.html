@@ -1,0 +1,50 @@
+{% extends 'market/base.html' %}
+{% load static %}
+
+{% block title %} Information page | {% endblock %}
+
+{% block content %}
+<div class="text-center py-3">
+    <h2>Example-market. Information page</h2>
+    <p>Current promotions in Example-market supermarkets and information about contests and gifts!</p>
+</div>
+
+<div class="text-center py-3">
+    <h3>SUBSCRIBE TO OUR PAGES IN SOCIAL NETWORKS</h3>
+    <div class="d-grid gap-2 col-lg-4 col-md-8 col-sm-10 mx-auto">
+        <a class="btn insta-link py-2 my-1 text-white"><i class="bi bi-instagram"></i> Example-market in Instagram</a>
+        <a class="btn teleg-link py-2 my-1 text-white"><i class="bi bi-telegram"></i> Example-market in Telegram</a>
+        <a class="btn viber-link py-2 my-1 text-white"><i class="bi bi-messenger"></i> Example-market in Vider</a>
+        <a class="btn faceb-link py-2 my-1 text-white"><i class="bi bi-facebook"></i> Example-market in Facebook</a>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center py-3">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+        <div class="text-center">
+            <h2>CURRENT DISCOUNTS ON FOOD</h2>
+            <img src="{% static 'market/images/food.jpg' %}" alt="food" width="250px" height="300px" class="rounded-3">
+            <p>Discounts on food in Example-market</p>
+            <a class="btn btn-primary text-white" href="products/food/">Learn more</a>
+        </div>
+    </div>
+</div>
+<div class="container d-flex justify-content-center py-3">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+        <div class="text-center">
+            <h2>CURRENT DISCOUNTS ON DRINKS</h2>
+            <img src="{% static 'market/images/drinks.jpg' %}" alt="drinks" width="250px" height="300px" class="rounded-3">
+            <p>Discounts on drinks in Example-market</p>
+            <a class="btn btn-primary text-white" href="products/drinks/">Learn more</a>
+        </div>
+    </div>
+</div>
+
+<div class="text-center p-3">
+    <h3>Example-market hotline</h3>
+    <br>
+    <h3><i class="bi bi-telephone-fill"></i> +380123456687</h3>
+</div>
+{% endblock %}
+
+{% block footer %} Information page {% endblock %}

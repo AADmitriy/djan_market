@@ -1,0 +1,28 @@
+{% extends 'market/base.html' %}
+{% load static %} 
+
+{% block title %} Products | {% endblock %} 
+
+
+{% block content %} 
+<div class="text-center py-3">
+    <h2>Example-market. Products</h2>
+</div>
+<div class="container d-flex justify-content-center">
+    <div class="col-lg-8 col-md-10 col-sm-12 products_tape rounded-3">
+        <div class="row row-cols-1 px-3">
+            {% for product in products %}
+                <div class="col text-center py-3 product_col">
+                    <h2 href="#">{{ product.name }}</h2>
+                    <img src="{% static product.path_to_img %}" href="#" class="rounded-3" height="350" width="450">
+                    <h3 href="#">$ {{ product.cost }} / {{ product.amount }}</h3>
+                    <button class="btn-primary rounded-3 px-4 py-2">Order</button>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block footer %} Products {% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'market/base.html' %} 
+{% load static %} 
+
+{% block title %} Success | {% endblock %} 
+
+
+{% block content %} 
+<div class="text-center py-3">
+    <h2>Product was successfully saved to database</h2>
+</div>
+
+<div class="text-center">
+    <a class="btn btn-primary px-4 py-2 mx-2 my-1" href="/">
+        Go to the main page
+    </a>
+    <a class="btn btn-primary px-4 py-2 mx-2 my-1" href="/add_product/">
+        Add another product
+    </a>
+</div>
+{% endblock %} 
+
+
+{% block footer %} Success {% endblock %}
