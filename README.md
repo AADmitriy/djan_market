@@ -17,9 +17,9 @@ and copy this repository.
 Than download requirements to venv by activating it and running `pip install -r requirements.txt`.
 
 Set new `SECRET_KEY` in `settings.py`. You can generate it by running in interactive shell(in enviroment with installed django) this commands.
-`python manage.py shell`
-`from django.core.management.utils import get_random_secret_key`
-`print(get_random_secret_key())`
+`python manage.py shell`,
+`from django.core.management.utils import get_random_secret_key`,
+`print(get_random_secret_key())`.
 
 Finally, go to the directory with manage.py and start program with `python manage.py runserver` command.
 
