@@ -23,4 +23,4 @@ Set new `SECRET_KEY` in `settings.py`. You can generate it by running in interac
 
 Finally, go to the directory with manage.py and start program with `python manage.py runserver` command.
 
-### Created for education purpose and misses some details such as real DataBase and nginx server.
+### Created for education purpose and misses some serious details such as real DataBase and nginx server.
