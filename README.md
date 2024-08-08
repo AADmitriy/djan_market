@@ -25,7 +25,8 @@ Finally, go to the directory with manage.py and start program with `python manag
 
 Or if you have Docker installed you can open project directory from console and run:
 `docker build -t site_image .`
-`docker run --rm -dp 8000:8000 site_image`
+`docker run --rm -it -dp 8000:8000 site_image`
+And then press Ctrl + C to stop container
 
 ### Created for education purpose and misses some serious details such as real DataBase and nginx server.
 
